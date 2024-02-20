@@ -72,8 +72,9 @@
 
 .logo_end {
   font-size: 26px;
-  font-weight: 400;
+  line-height: 26px;
   text-align: left;
+  color: rgba(255, 255, 255, 1);
 }
 
 .nav_end {
@@ -83,5 +84,11 @@
   line-height: 26px;
   color: rgba(255, 255, 255, 0.6);
   margin-right: 40px;
-  text-align: center;
+  text-align: right;
+}
+
+.container_end {
+  max-width: 960px;
+  width:  100%;
+  margin: 0 auto;
 }
