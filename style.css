@@ -12,9 +12,9 @@
 }
   
 .container{
-    max-width: 960px;
+    max-width: 1440px;
     width:  100%;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .header {
@@ -84,9 +84,7 @@
   background-image: url("Rectangle.png");
   background-repeat: no-repeat;
   background-position: center bottom;
-  background-color: rgba(35, 47, 56, 0.6);
-  width: 1440px;
-  height: 89px;
+
   top: 2600px;
 }
 
@@ -114,7 +112,6 @@
   max-width: 960px;
   width:  100%;
   margin: 0 auto;
-  height: 34px;
   margin-top: 28px;
   margin-left: 240px;
 }
