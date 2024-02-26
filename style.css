@@ -1,4 +1,4 @@
-.oxygen-regular {
+.OxygenRegular {
     font-family: "Oxygen", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -11,31 +11,28 @@
   font-style: normal;
 }
   
-.container{
+#container{
     max-width: 1440px;
     width:  100%;
+    height: 2600px;
     margin: auto;
 }
 
 .header {
   display: flex;
-  justify-content:space-between;
-  align-items: center;
+  justify-content: center;
+  height: 74px;
 }
 
-.header_logo{
-  line-height: 26px;
-  font-size: 26px;
-  text-align: left;
+#ContainerHead {
+  width: 940px;
+  height: 40px;
+  margin-top: 17px;
 }
 
-.header ul li {
-  font-size: 12px;
-  line-height: 20px;
-  display: inline-block;
-  list-style: none;
-  margin-right: 40px;
-  text-align: center;
+.ContainerNav {
+  display: inline;
+  float: right;
 }
 
 .nav {
@@ -43,14 +40,13 @@
   line-height: 20px;
   display: inline-block;
   list-style: none;
-  margin-right: 40px;
   text-align: center;
   text-transform: uppercase;
   color: rgba(46, 46, 46, 1);
   text-decoration: none;
 }
 
-.block-intro {
+#BlockIntro {
   width: 940px;
   height: 159px;
   box-sizing: border-box;
@@ -58,13 +54,13 @@
   margin-left: 250px;
 }
 
-.lora h1 {
+.IntroLora {
   font-size: 50px;
   text-align: center;
   line-height: 51px;
 }
 
-.subtittle h2 {
+.subtittle {
   font-size: 17px;
   line-height: 20px;
   text-align: center;
@@ -78,14 +74,6 @@
   left: 240px;
   font-size: 24px; 
   line-height: 35px;
-}
-
-.section {
-  background-image: url("Rectangle.png");
-  background-repeat: no-repeat;
-  background-position: center bottom;
-
-  top: 2600px;
 }
 
 .logo_end {
@@ -108,12 +96,14 @@
   text-decoration: none;
 }
 
-.container_end {
-  max-width: 960px;
+#ContainerEnd {
+  max-width: 1440px;
   width:  100%;
-  margin: 0 auto;
-  margin-top: 28px;
-  margin-left: 240px;
+  margin: auto;
+  height: 89px;
+  background-image: url("Footer.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 .block {
@@ -125,6 +115,10 @@
 }
 
 .text {
+  width: 960px;
+  box-sizing: border-box;
+  margin-top: 140px;
+  margin-left: 240px;
   font-size: 24px;
   line-height: 35px;
 }
