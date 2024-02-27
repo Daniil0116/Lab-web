@@ -19,31 +19,38 @@
 }
 
 .header {
-  display: flex;
-  justify-content: center;
   height: 74px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 0;
+}
+
+.nav {
+  display: flex;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.nav__link {
+  margin-left: 50px;
+  color: rgba(46, 46, 46, 1);
+  text-decoration: none;
 }
 
 #ContainerHead {
   width: 940px;
   height: 40px;
   margin-top: 17px;
+  margin-left: 250px;
 }
 
 .ContainerNav {
   display: inline;
   float: right;
-}
-
-.nav {
-  font-size: 12px;
-  line-height: 20px;
-  display: inline-block;
-  list-style: none;
-  text-align: center;
-  text-transform: uppercase;
-  color: rgba(46, 46, 46, 1);
-  text-decoration: none;
 }
 
 #BlockIntro {
@@ -69,48 +76,28 @@
   color: rgba(46, 46, 46, 0.63);
 }
 
-.info { 
-  top: 140px;
-  left: 240px;
-  font-size: 24px; 
-  line-height: 35px;
-}
-
-.logo_end {
-  font-size: 26px;
-  line-height: 26px;
-  text-align: left;
-  color: rgba(255, 255, 255, 1);
-}
-
-.nav_end {
-  display: inline-block;
-  list-style: none;
-  font-size: 11px;
-  line-height: 26px;
+.navEnd {
+  margin-left: 50px;
   color: rgba(255, 255, 255, 0.6);
-  margin-right: 40px;
-  text-align: right;
-  text-transform: uppercase;
-  color: rgba(46, 46, 46, 1);
   text-decoration: none;
 }
 
-#ContainerEnd {
-  max-width: 1440px;
-  width:  100%;
-  margin: auto;
+#footer {
   height: 89px;
   background-image: url("Footer.svg");
   background-repeat: no-repeat;
   background-position: center bottom;
 }
 
-.block {
-  box-sizing: border-box;
-  margin-top: 140px;
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0;
+}
+
+.ContainerEnd {
   width: 960px;
-  height: 1431px;
   margin-left: 240px;
 }
 
@@ -121,30 +108,4 @@
   margin-left: 240px;
   font-size: 24px;
   line-height: 35px;
-}
-
-.nav a {
-  text-decoration: none;
-  font-size: 12px;
-  line-height: 20px;
-  display: inline-block;
-  list-style: none;
-  margin-right: 40px;
-  text-align: center;
-  text-transform: uppercase;
-  color: rgba(46, 46, 46, 1);
-  text-decoration: none;
-}
-
-.nav_end a {
-  text-decoration: none;
-  text-decoration: none;
-  font-size: 12px;
-  line-height: 20px;
-  display: inline-block;
-  list-style: none;
-  margin-right: 40px;
-  text-align: center;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.6);
 }
