@@ -1,50 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
     display: flex;
     flex-direction: column;
     background-image: url(img/desert.svg);
     background-repeat: no-repeat;
     background-position: center;
-    width: 1440px;
-    height: 500px;
-    margin: auto;
+    margin: 0 auto;
+  }
+
+  .navigation__list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
   }
   
-  .header__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 17px 0;
+  .header__logo {
+    display: inline;
   }
-  
-  .nav {
-    display: flex;
+
+  .navigation {
+    display: inline;
+  }
+
+  .navigation__link {
+    display: block;
+    padding-left: 40px;
+    font-family: Oxygen;
     font-size: 12px;
-    text-transform: uppercase;
-    font-family: "Oxygen", sans-serif;
     font-weight: 400;
-    font-style: normal;
-  }
-  
-  .nav__link {
-    margin-left: 50px;
+    line-height: 20px;
+    text-align: left;
     color: rgba(255, 255, 255, 1);
+    text-align: right;
     text-decoration: none;
   }
   
-  .ContainerHead {
-    width: 940px;
-    height: 40px;
-    margin-top: 17px;
-    margin-left: 250px;
-  }
-  
-  .ContainerNav {
-    display: inline;
-    float: right;
-  }
-
-  .BlockIntro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
