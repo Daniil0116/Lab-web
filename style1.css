@@ -40,7 +40,7 @@
 }
 
 .banner {
-  background-image: url(img/desert.svg);
+  background-image: url(images/desert.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -173,7 +173,7 @@
   padding-right: 20px;
   padding-top: 140px;
   border-radius: 3px;
-  background-image: url(img/Article1.svg);
+  background-image: url(images/Article1.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -258,7 +258,7 @@
   padding-right: 20px;
   padding-top: 20px;
   border-radius: 3px;
-  background-image: url(img/Article2.svg);
+  background-image: url(images/Article2.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -387,7 +387,7 @@
   width: 1440px;
   height: 89px;
   margin: auto;
-  background-image: url("img/Footer.svg");
+  background-image: url("images/Footer.svg");
   background-repeat: no-repeat;
   background-position: center bottom;
 }

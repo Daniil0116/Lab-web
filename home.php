@@ -22,7 +22,7 @@
         <div class="banner">
             <div class="header">
                 <div class="header__logo">
-                    <img src="img/Escape_End.svg" alt="Логотип-Escape">
+                    <img src="images/Escape_End.svg" alt="Логотип-Escape">
                 </div>
                 <nav class="navigation">
                     <ul class="navigation__list">
@@ -84,7 +84,7 @@
                         <div class="future-article__subtittle">The road ahead might be paved - it might not be.</div>
                         <div class="future-article__information">
                             <div class="future-article__author">
-                                <img src="img/Mat_Vogels.svg" alt="Mat_Vogels">
+                                <img src="images/Mat_Vogels.svg" alt="Mat_Vogels">
                                 <div class="future-article__name">Mat Vogels</div>
                             </div>
                             <div class="future-article__date">September 25, 2015</div>
@@ -98,7 +98,7 @@
                         <div class="future-article__subtittle">Once a year, go someplace you’ve never been before.</div>
                         <div class="future-article__information">
                             <div class="future-article__author">
-                                <img src="img/William_Wong.svg" alt="Mat_Vogels">
+                                <img src="images/William_Wong.svg" alt="Mat_Vogels">
                                 <div class="future-article__name">William Wong</div>
                             </div>
                             <div class="future-article__date">September 25, 2015</div>
@@ -112,21 +112,21 @@
             <hr class="block-most__line">
             <div class="block-most__content-block2">
                 <a class="content-block2__article" href="#">
-                    <img src="img/image_article3.svg" alt="balloon">
+                    <img src="images/image_article3.svg" alt="balloon">
                     <div class="block-most__main">
                         <div class="most-article__tittle">Still Standing Tall</div>
                         <div class="most-article__subtittle">Life begins at the end of your comfort zone.</div>
                     </div>
                     <div class="most-article__information">
                         <div class="most-article__author">
-                            <img src="img/William_Wong.svg" alt="Mat_Vogels">
+                            <img src="images/William_Wong.svg" alt="Mat_Vogels">
                             <div class="most-article__name">William Wong</div>
                         </div>
                         <div class="most-article__date">9/25/2015</div>
                     </div>
                 </a>
                 <a class="content-block2__article" href="#">
-                    <img src="img/image_article4.svg" alt="bridge">
+                    <img src="images/image_article4.svg" alt="bridge">
                     <div class="block-most__main">
                         <div class="most-article__tittle">Sunny Side Up</div>
                         <div class="most-article__subtittle">No place is ever as bad as they tell you it’s going to be.
@@ -134,14 +134,14 @@
                     </div>
                     <div class="most-article__information">
                         <div class="most-article__author">
-                            <img src="img/Mat_Vogels.svg" alt="Mat_Vogels">
+                            <img src="images/Mat_Vogels.svg" alt="Mat_Vogels">
                             <div class="most-article__name">Mat Vogels</div>
                         </div>
                         <div class="most-article__date">9/25/2015</div>
                     </div>
                 </a>
                 <a class="content-block2__article" href="#">
-                    <img src="img/image_article5.svg" alt="dawn">
+                    <img src="images/image_article5.svg" alt="dawn">
                     <div class="block-most__main">
                         <div class="most-article__tittle">Water Falls</div>
                         <div class="most-article__subtittle">We travel not to escape life, but for life not to escape
@@ -150,14 +150,14 @@
                     </div>
                     <div class="most-article__information">
                         <div class="most-article__author">
-                            <img src="img/Mat_Vogels.svg" alt="Mat Vogels">
+                            <img src="images/Mat_Vogels.svg" alt="Mat Vogels">
                             <div class="most-article__name">Mat Vogels</div>
                         </div>
                         <div class="most-article__date">9/25/2015</div>
                     </div>
                 </a>
                 <a class="content-block2__article" href="#">
-                    <img src="img/image_article6.svg" alt="Ocean">
+                    <img src="images/image_article6.svg" alt="Ocean">
                     <div class="block-most__main">
                         <div class="most-article__tittle">Through the Mist</div>
                         <div class="most-article__subtittle">Travel makes you see what a tiny place you occupy in the
@@ -165,28 +165,28 @@
                     </div>
                     <div class="most-article__information">
                         <div class="most-article__author">
-                            <img src="img/William_Wong.svg" alt="William Wong">
+                            <img src="images/William_Wong.svg" alt="William Wong">
                             <div class="most-article__name">William Wong</div>
                         </div>
                         <div class="most-article__date">9/25/2015</div>
                     </div>
                 </a>
                 <a class="content-block2__article" href="#">
-                    <img src="img/image_article7.svg" alt="fog">
+                    <img src="images/image_article7.svg" alt="fog">
                     <div class="block-most__main">
                         <div class="most-article__tittle">Awaken Early</div>
                         <div class="most-article__subtittle">Not all those who wander are lost.</div>
                     </div>
                     <div class="most-article__information">
                         <div class="most-article__author">
-                            <img src="img/Mat_Vogels.svg" alt="Mat Vogels">
+                            <img src="images/Mat_Vogels.svg" alt="Mat Vogels">
                             <div class="most-article__name">Mat Vogels</div>
                         </div>
                         <div class="most-article__date">9/25/2015</div>
                     </div>
                 </a>
                 <a class="content-block2__article" href="#">
-                    <img src="img/image_article8.svg" alt="Waterfall">
+                    <img src="images/image_article8.svg" alt="Waterfall">
                     <div class="block-most__main">
                         <div class="most-article__tittle">Try it Always</div>
                         <div class="most-article__subtittle">The world is a book, and those who do not travel read only
@@ -194,7 +194,7 @@
                     </div>
                     <div class="most-article__information">
                         <div class="most-article__author">
-                            <img src="img/Mat_Vogels.svg" alt="Mat Vogels">
+                            <img src="images/Mat_Vogels.svg" alt="Mat Vogels">
                             <div class="most-article__name">Mat Vogels</div>
                         </div>
                         <div class="most-article__date">9/25/2015</div>
@@ -208,7 +208,7 @@
             <div class="ContainerEnd">
                 <div class="footer__inner">
                     <div class="footer__logo">
-                        <img src="img/Escape_End.svg" alt="logo-Escape">
+                        <img src="images/Escape_End.svg" alt="logo-Escape">
                     </div>
                     <nav class="nav">
                         <a class="navEnd" href="index.html">Home</a>
