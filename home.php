@@ -78,7 +78,7 @@
             <h3 class="block-feature__tittle">Featured Posts</h3>
             <hr class="block-future__line">
             <div class="block-future__content-block1">
-                <a class="content-block1__article1" href="the-road-ahead.html">
+                <a class="content-block1__article1" href="post.php">
                     <div class="article1__background">
                         <div class="future-article__tittle">The Road Ahead</div>
                         <div class="future-article__subtittle">The road ahead might be paved - it might not be.</div>

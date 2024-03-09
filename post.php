@@ -16,10 +16,10 @@
             <div class="ContainerHead">
                 <div class="header__inner">
                     <div class="header__logo">
-                        <img src="img/Escape_Head.svg" alt="logo-Escape">
+                        <img src="images/Escape_Head.svg" alt="logo-Escape">
                     </div>
                     <nav class="nav">
-                        <a class="nav__link" href="index.html">Home</a>
+                        <a class="nav__link" href="home.php">Home</a>
                         <a class="nav__link" href="#">Categories</a>
                         <a class="nav__link" href="#">About</a> 
                         <a class="nav__link" href="#">Contact</a>
@@ -33,7 +33,7 @@
                 <h2 class="subtittle">The road ahead might be paved - it might not be.</h2>
             </div>
         </main>
-        <img src="img/IMAGE.png" alt=”Northern-lights”>
+        <img src="images/IMAGE.png" alt=”Northern-lights”>
         <p class="text">
             Dark spruce forest frowned on either side the frozen waterway. The trees had been stripped by a recent wind of their white covering of frost, and they seemed to lean towards each other, black and ominous, in the fading light. 
             A vast silence reigned over the land. The land itself was a desolation, lifeless, without movement, so lone and cold that the spirit of it was not even that of sadness. 
@@ -58,10 +58,10 @@
             <div class="ContainerEnd">
                 <div class="footer__inner">
                     <div class="footer__logo">
-                        <img src="img/Escape_End.svg" alt="logo-Escape">
+                        <img src="images/Escape_End.svg" alt="logo-Escape">
                     </div>
                     <nav class="nav">
-                        <a class="navEnd" href="index.html">Home</a>
+                        <a class="navEnd" href="home.php">Home</a>
                         <a class="navEnd" href="#">Categories</a>
                         <a class="navEnd" href="#">About</a> 
                         <a class="navEnd" href="#">Contact</a>
