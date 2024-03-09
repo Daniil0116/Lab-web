@@ -61,7 +61,7 @@
                         <img src="images/Escape_End.svg" alt="logo-Escape">
                     </div>
                     <nav class="nav">
-                        <a class="navEnd" href="index.html">Home</a>
+                        <a class="navEnd" href="index.php">Home</a>
                         <a class="navEnd" href="#">Categories</a>
                         <a class="navEnd" href="#">About</a>
                         <a class="navEnd" href="#">Contact</a>
