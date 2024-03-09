@@ -80,7 +80,7 @@
   width: 1440px;
   height: 89px;
   margin: auto;
-  background-image: url("images/Footer.svg");
+  background-image: url(images/Footer.svg);
   background-repeat: no-repeat;
   background-position: center bottom;
 }
