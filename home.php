@@ -1,19 +1,19 @@
 <?php
 $posts = [
     [
-        'background-image' => 'images/Article1.svg',
+        
         'tittle' => 'The Road Ahead',
         'subtittle' => 'The road ahead might be paved - it might not be.',
-        'img_modifier' => 'http://localhost:8001/static/images/Mat_Vogels.css',
+        
         'author' => 'Mat Vogels',
         'date' => 'September 25, 2015',
         // другие свойства этого поста
     ],
     [
-        'background-image' => 'url(images/Article2.svg)',
+        
         'tittle' => 'From Top Down',
         'subtittle' => 'Once a year, go someplace you’ve never been before.',
-        'img_modifier' => 'images/William_Wong.svg',
+        
         'author' => 'William Wong',
         'date' => 'September 25, 2015',
         // свойства второго поста
@@ -31,7 +31,7 @@ $posts = [
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style1.css">
+    <link rel="stylesheet" href="./static/styles/style1.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet">
     <style>
         body {
@@ -45,7 +45,7 @@ $posts = [
         <div class="banner">
             <div class="header">
                 <div class="header__logo">
-                    <img src="static/images/Escape_End.svg" alt="Логотип-Escape">
+                    <img src="images/Escape_End.svg" alt="Логотип-Escape">
                 </div>
                 <nav class="navigation">
                     <ul class="navigation__list">
@@ -113,21 +113,21 @@ $posts = [
             <hr class="block-most__line">
             <div class="block-most__content-block2">
                 <a class="content-block2__article" href="#">
-                    <img src="static/images/image_article3.svg" alt="balloon">
+                    <img src="/static/images/image_article3.svg" alt="balloon">
                     <div class="block-most__main">
                         <div class="most-article__tittle">Still Standing Tall</div>
                         <div class="most-article__subtittle">Life begins at the end of your comfort zone.</div>
                     </div>
                     <div class="most-article__information">
                         <div class="most-article__author">
-                            <img src="static/images/William_Wong.svg" alt="Mat_Vogels">
+                            <img src="/static/images/William_Wong.svg" alt="Mat_Vogels">
                             <div class="most-article__name">William Wong</div>
                         </div>
                         <div class="most-article__date">9/25/2015</div>
                     </div>
                 </a>
                 <a class="content-block2__article" href="#">
-                    <img src="static/images/image_article4.svg" alt="bridge">
+                    <img src="/static/images/image_article4.svg" alt="bridge">
                     <div class="block-most__main">
                         <div class="most-article__tittle">Sunny Side Up</div>
                         <div class="most-article__subtittle">No place is ever as bad as they tell you it’s going to be.
@@ -135,14 +135,14 @@ $posts = [
                     </div>
                     <div class="most-article__information">
                         <div class="most-article__author">
-                            <img src="static/images/Mat_Vogels.svg" alt="Mat_Vogels">
+                            <img src="/static/images/Mat_Vogels.svg" alt="Mat_Vogels">
                             <div class="most-article__name">Mat Vogels</div>
                         </div>
                         <div class="most-article__date">9/25/2015</div>
                     </div>
                 </a>
                 <a class="content-block2__article" href="#">
-                    <img src="static/images/image_article5.svg" alt="dawn">
+                    <img src="/static/images/image_article5.svg" alt="dawn">
                     <div class="block-most__main">
                         <div class="most-article__tittle">Water Falls</div>
                         <div class="most-article__subtittle">We travel not to escape life, but for life not to escape
@@ -151,14 +151,14 @@ $posts = [
                     </div>
                     <div class="most-article__information">
                         <div class="most-article__author">
-                            <img src="static/images/Mat_Vogels.svg" alt="Mat Vogels">
+                            <img src="/static/images/Mat_Vogels.svg" alt="Mat Vogels">
                             <div class="most-article__name">Mat Vogels</div>
                         </div>
                         <div class="most-article__date">9/25/2015</div>
                     </div>
                 </a>
                 <a class="content-block2__article" href="#">
-                    <img src="static/images/image_article6.svg" alt="Ocean">
+                    <img src="/static/images/image_article6.svg" alt="Ocean">
                     <div class="block-most__main">
                         <div class="most-article__tittle">Through the Mist</div>
                         <div class="most-article__subtittle">Travel makes you see what a tiny place you occupy in the
@@ -166,28 +166,28 @@ $posts = [
                     </div>
                     <div class="most-article__information">
                         <div class="most-article__author">
-                            <img src="static/images/William_Wong.svg" alt="William Wong">
+                            <img src="/static/images/William_Wong.svg" alt="William Wong">
                             <div class="most-article__name">William Wong</div>
                         </div>
                         <div class="most-article__date">9/25/2015</div>
                     </div>
                 </a>
                 <a class="content-block2__article" href="#">
-                    <img src="static/images/image_article7.svg" alt="fog">
+                    <img src="/static/images/image_article7.svg" alt="fog">
                     <div class="block-most__main">
                         <div class="most-article__tittle">Awaken Early</div>
                         <div class="most-article__subtittle">Not all those who wander are lost.</div>
                     </div>
                     <div class="most-article__information">
                         <div class="most-article__author">
-                            <img src="static/images/Mat_Vogels.svg" alt="Mat Vogels">
+                            <img src="/static/images/Mat_Vogels.svg" alt="Mat Vogels">
                             <div class="most-article__name">Mat Vogels</div>
                         </div>
                         <div class="most-article__date">9/25/2015</div>
                     </div>
                 </a>
                 <a class="content-block2__article" href="#">
-                    <img src="static/images/image_article8.svg" alt="Waterfall">
+                    <img src="/static/images/image_article8.svg" alt="Waterfall">
                     <div class="block-most__main">
                         <div class="most-article__tittle">Try it Always</div>
                         <div class="most-article__subtittle">The world is a book, and those who do not travel read only
@@ -195,7 +195,7 @@ $posts = [
                     </div>
                     <div class="most-article__information">
                         <div class="most-article__author">
-                            <img src="static/images/Mat_Vogels.svg" alt="Mat Vogels">
+                            <img src="/static/images/Mat_Vogels.svg" alt="Mat Vogels">
                             <div class="most-article__name">Mat Vogels</div>
                         </div>
                         <div class="most-article__date">9/25/2015</div>
@@ -209,7 +209,7 @@ $posts = [
             <div class="ContainerEnd">
                 <div class="footer__inner">
                     <div class="footer__logo">
-                        <img src="static/images/Escape_End.svg" alt="logo-Escape">
+                        <img src="/static/images/Escape_End.svg" alt="logo-Escape">
                     </div>
                     <nav class="nav">
                         <a class="navEnd" href="index.html">Home</a>
