@@ -1,6 +1,7 @@
 <?php
 $posts = [
     [
+        'id' => 1,
         'background_image' => 'Article1.svg',
         'tittle' => 'The Road Ahead',
         'subtittle' => 'The road ahead might be paved - it might not be.',
@@ -10,6 +11,7 @@ $posts = [
         // другие свойства этого поста
     ],
     [
+        'id' => 2,
         'tittle' => 'From Top Down',
         'subtittle' => 'Once a year, go someplace you’ve never been before.',
         'photo_author' => 'William_Wong.svg',
