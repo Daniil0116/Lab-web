@@ -1,25 +1,84 @@
 <?php
 $posts = [
     [
-        
+        'background_image' => 'Article1.svg',
         'tittle' => 'The Road Ahead',
         'subtittle' => 'The road ahead might be paved - it might not be.',
-        
+        'photo_author' => 'Mat_Vogels.svg',
         'author' => 'Mat Vogels',
         'date' => 'September 25, 2015',
         // другие свойства этого поста
     ],
     [
-        
         'tittle' => 'From Top Down',
         'subtittle' => 'Once a year, go someplace you’ve never been before.',
-        
+        'photo_author' => 'William_Wong.svg',
         'author' => 'William Wong',
         'date' => 'September 25, 2015',
         // свойства второго поста
     ],
 ];
+$posts_recent = [
+    [
+        'image' => 'image_article3.svg',
+        'image_description' => 'balloon',
+        'tittle' => 'Still Standing Tall',
+        'subtittle' => 'Life begins at the end of your comfort zone.',
+        'photo_author' => 'William_Wong.svg',
+        'author' => 'Mat Vogels',
+        'date' => '9/25/2015',
+    ],
+    [
+        'image' => 'image_article4.svg',
+        'image_description' => 'bridge',
+        'tittle' => 'Sunny Side Up',
+        'subtittle' => 'No place is ever as bad as they tell you it’s going to be.',
+        'photo_author' => 'Mat_Vogels.svg',
+        'author' => 'Mat Vogels',
+        'date' => '9/25/2015',
+    ],
+    [
+        'image' => 'image_article5.svg',
+        'image_description' => 'dawn',
+        'tittle' => 'Water Falls',
+        'subtittle' => 'We travel not to escape life, but for life not to escape
+        us.',
+        'photo_author' => 'Mat_Vogels.svg',
+        'author' => 'Mat Vogels',
+        'date' => '9/25/2015',
+    ],
+    [
+        'image' => 'image_article6.svg',
+        'image_description' => 'Ocean',
+        'tittle' => 'Through the Mist',
+        'subtittle' => 'Travel makes you see what a tiny place you occupy in the
+        world.',
+        'photo_author' => 'William_Wong.svg',
+        'author' => 'William Wong',
+        'date' => '9/25/2015',
+    ],
+    [
+        'image' => 'image_article7.svg',
+        'image_description' => 'fog',
+        'tittle' => 'Awaken Early',
+        'subtittle' => 'Not all those who wander are lost.',
+        'photo_author' => 'Mat_Vogels.svg',
+        'author' => 'Mat Vogels',
+        'date' => '9/25/2015',
+    ],
+    [
+        'image' => 'image_article8.svg',
+        'image_description' => 'Waterfall',
+        'tittle' => 'Try it Always',
+        'subtittle' => 'The world is a book, and those who do not travel read only
+        one page.',
+        'photo_author' => 'Mat_Vogels.svg',
+        'author' => 'Mat Vogels',
+        'date' => '9/25/2015',
+    ],
+]
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -112,95 +171,11 @@ $posts = [
             <h4 class="block-most__tittle">Most Recent</h4>
             <hr class="block-most__line">
             <div class="block-most__content-block2">
-                <a class="content-block2__article" href="#">
-                    <img src="/static/images/image_article3.svg" alt="balloon">
-                    <div class="block-most__main">
-                        <div class="most-article__tittle">Still Standing Tall</div>
-                        <div class="most-article__subtittle">Life begins at the end of your comfort zone.</div>
-                    </div>
-                    <div class="most-article__information">
-                        <div class="most-article__author">
-                            <img src="/static/images/William_Wong.svg" alt="Mat_Vogels">
-                            <div class="most-article__name">William Wong</div>
-                        </div>
-                        <div class="most-article__date">9/25/2015</div>
-                    </div>
-                </a>
-                <a class="content-block2__article" href="#">
-                    <img src="/static/images/image_article4.svg" alt="bridge">
-                    <div class="block-most__main">
-                        <div class="most-article__tittle">Sunny Side Up</div>
-                        <div class="most-article__subtittle">No place is ever as bad as they tell you it’s going to be.
-                        </div>
-                    </div>
-                    <div class="most-article__information">
-                        <div class="most-article__author">
-                            <img src="/static/images/Mat_Vogels.svg" alt="Mat_Vogels">
-                            <div class="most-article__name">Mat Vogels</div>
-                        </div>
-                        <div class="most-article__date">9/25/2015</div>
-                    </div>
-                </a>
-                <a class="content-block2__article" href="#">
-                    <img src="/static/images/image_article5.svg" alt="dawn">
-                    <div class="block-most__main">
-                        <div class="most-article__tittle">Water Falls</div>
-                        <div class="most-article__subtittle">We travel not to escape life, but for life not to escape
-                            us.
-                        </div>
-                    </div>
-                    <div class="most-article__information">
-                        <div class="most-article__author">
-                            <img src="/static/images/Mat_Vogels.svg" alt="Mat Vogels">
-                            <div class="most-article__name">Mat Vogels</div>
-                        </div>
-                        <div class="most-article__date">9/25/2015</div>
-                    </div>
-                </a>
-                <a class="content-block2__article" href="#">
-                    <img src="/static/images/image_article6.svg" alt="Ocean">
-                    <div class="block-most__main">
-                        <div class="most-article__tittle">Through the Mist</div>
-                        <div class="most-article__subtittle">Travel makes you see what a tiny place you occupy in the
-                            world.</div>
-                    </div>
-                    <div class="most-article__information">
-                        <div class="most-article__author">
-                            <img src="/static/images/William_Wong.svg" alt="William Wong">
-                            <div class="most-article__name">William Wong</div>
-                        </div>
-                        <div class="most-article__date">9/25/2015</div>
-                    </div>
-                </a>
-                <a class="content-block2__article" href="#">
-                    <img src="/static/images/image_article7.svg" alt="fog">
-                    <div class="block-most__main">
-                        <div class="most-article__tittle">Awaken Early</div>
-                        <div class="most-article__subtittle">Not all those who wander are lost.</div>
-                    </div>
-                    <div class="most-article__information">
-                        <div class="most-article__author">
-                            <img src="/static/images/Mat_Vogels.svg" alt="Mat Vogels">
-                            <div class="most-article__name">Mat Vogels</div>
-                        </div>
-                        <div class="most-article__date">9/25/2015</div>
-                    </div>
-                </a>
-                <a class="content-block2__article" href="#">
-                    <img src="/static/images/image_article8.svg" alt="Waterfall">
-                    <div class="block-most__main">
-                        <div class="most-article__tittle">Try it Always</div>
-                        <div class="most-article__subtittle">The world is a book, and those who do not travel read only
-                            one page.</div>
-                    </div>
-                    <div class="most-article__information">
-                        <div class="most-article__author">
-                            <img src="/static/images/Mat_Vogels.svg" alt="Mat Vogels">
-                            <div class="most-article__name">Mat Vogels</div>
-                        </div>
-                        <div class="most-article__date">9/25/2015</div>
-                    </div>
-                </a>
+                <?php
+                foreach ($posts_recent as $posts_recent) {
+                    include 'posts_recent-preview.php';
+                }
+                ?>
             </div>
         </div>
     </main>
