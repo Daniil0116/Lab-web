@@ -106,7 +106,7 @@ $posts_recent = [
         <div class="banner">
             <div class="header">
                 <div class="header__logo">
-                    <img src="images/Escape_End.svg" alt="Логотип-Escape">
+                    <img src="/static/images/Escape_End.svg" alt="Логотип-Escape">
                 </div>
                 <nav class="navigation">
                     <ul class="navigation__list">

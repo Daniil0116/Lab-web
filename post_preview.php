@@ -1,4 +1,4 @@
-<div class="article__background">
+<div class="article__background_<?= $post['id'] ?>">
     <a href='/post?id=<?= $post['id'] ?>'>
         <div class="future-article__tittle"><?= $post['tittle'] ?></div>
         <div class="future-article__subtittle"><?= $post['subtittle'] ?></div>
