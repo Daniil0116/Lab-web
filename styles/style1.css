@@ -8,10 +8,6 @@
   margin: 0 auto;
 }
 
-#1 {
-  background-image: url(/static/images/Article1.svg);
-}
-
 .header {
   display: flex;
   justify-content: space-between;

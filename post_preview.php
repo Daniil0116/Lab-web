@@ -1,5 +1,5 @@
-<div class="article__background_<?= $post['id'] ?>">
-    <a href='/post?id=<?= $post['id'] ?>'>
+<a class="content-block1__article" href='/post?id=<?= $post['id'] ?>'>
+    <div class="article__background_<?= $post['id'] ?>">
         <div class="future-article__tittle"><?= $post['tittle'] ?></div>
         <div class="future-article__subtittle"><?= $post['subtittle'] ?></div>
         <div class="future-article__information">
@@ -9,5 +9,5 @@
             </div>
             <div class="future-article__date"><?= $post['date'] ?></div>
         </div>
-    </a>
-</div>
+    </div>
+</a>

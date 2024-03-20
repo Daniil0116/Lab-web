@@ -82,7 +82,6 @@ $posts_recent = [
 ?>
 
 
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -199,5 +198,3 @@ $posts_recent = [
         </div>
     </footer>
 </body>
-
-</html>

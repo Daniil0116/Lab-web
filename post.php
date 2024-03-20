@@ -39,10 +39,16 @@ $post = [
 
 <body>
     <div class="container">
+
         <header class="header">
             <div class="ContainerHead">
                 <div class="header__inner">
                     <div class="header__logo">
+                        <?php
+                        foreach ($_GET as $key => $value) {
+                            echo "{$key} = {$value} </br>";
+                        }
+                        ?>
                         <img src="static/images/Escape_Head.svg" alt="logo-Escape">
                     </div>
                     <nav class="nav">
@@ -71,7 +77,7 @@ $post = [
                         <img src="static/images/Escape_End.svg" alt="logo-Escape">
                     </div>
                     <nav class="nav">
-                        <a class="navEnd" href="index.php">Home</a>
+                        <a class="navEnd" href="home.php">Home</a>
                         <a class="navEnd" href="#">Categories</a>
                         <a class="navEnd" href="#">About</a>
                         <a class="navEnd" href="#">Contact</a>
