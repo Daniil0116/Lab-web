@@ -9,6 +9,6 @@
             <img src="/static/images/<?= $posts_recent['photo_author'] ?>" alt="<?= $posts_recent['author'] ?>">
             <div class="most-article__name"><?= $posts_recent['author'] ?></div>
         </div>
-        <div class="most-article__date"><?= $posts_recent['date'] ?></div>
+        <div class="most-article__date"><?= date("n/d/y", $posts_recent['date'] )?></div>
     </div>
 </div>

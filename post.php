@@ -1,7 +1,13 @@
 <?php
+
+$postId = 'не определено';
+if(isset($_GET["id"])){
+    $postId = $_GET["id"];
+}
+
 $post = [
 
-    'tittle' => 'The Road Ahead',
+    'tittle' => "({$postId})The Road Ahead",
     'subtittle' => 'The road ahead might be paved - it might not be.',
     'image' => 'IMAGE.png',
     'image_description' => 'Northern-lights',
@@ -44,11 +50,6 @@ $post = [
             <div class="ContainerHead">
                 <div class="header__inner">
                     <div class="header__logo">
-                        <?php
-                        foreach ($_GET as $key => $value) {
-                            echo "{$key} = {$value} </br>";
-                        }
-                        ?>
                         <img src="static/images/Escape_Head.svg" alt="logo-Escape">
                     </div>
                     <nav class="nav">

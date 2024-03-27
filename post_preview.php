@@ -7,7 +7,7 @@
                 <img src="./static/images/<?= $post['photo_author'] ?>" alt="<?= $post['author'] ?>">
                 <div class="future-article__name"><?= $post['author'] ?></div>
             </div>
-            <div class="future-article__date"><?= $post['date'] ?></div>
+            <div class="future-article__date"><?= date("F j, Y", $post['date'])?></div>
         </div>
     </div>
 </a>
