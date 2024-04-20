@@ -32,3 +32,21 @@ function saveFile(string $file, string $data): void
     echo 'Произошла ошибка при открытии файла';
   }
 }
+
+function addPost(array $dataAsArray, $conn): void {
+  $title = $dataAsArray['title'] ?? null;
+  $subtitle = $dataAsArray['subtitle'] ?? null;
+  $content = $dataAsArray['content'] ?? 'content';
+  $author = $dataAsArray['author'] ?? null;
+  $author_url = "http://localhost:8001/static/images/William_Wong.svg";
+  $publish_date = $dataAsArray['publish_date'] ?? null;
+  $image_url = "http://localhost:8001/static/images/new_post.jpg";
+  $featured = $dataAsArray['featured'] ?? null;
+  $sql = <<<SQL
+           INSERT INTO post
+           (title, subtitle, content, author, author_url, publish_date, image_url, featured);
+           VALUES ('$title', '$subtitle', '$content', '$author', '$author_url', '$publish_date', '$image_irl', '$featured');
+  SQL;
+  $conn->query($sql);
+}
+?>

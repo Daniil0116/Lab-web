@@ -1,14 +1,14 @@
-<div class="content-block2__article">
-    <img src="/static/images/<?= $posts_recent['image'] ?>" alt="<?= $posts_recent['image_description'] ?>">
+<a class="content-block2__article" href='/post?id=<?= $row['post_id'] ?>'>
+    <img class="image" src="<?= $row['image_url'] ?>" alt="<?= $row['title'] ?>">
     <div class="block-most__main">
-        <div class="most-article__tittle"><?= $posts_recent['tittle'] ?></div>
-        <div class="most-article__subtittle"><?= $posts_recent['subtittle'] ?></div>
+        <div class="most-article__tittle"><?= $row['title'] ?></div>
+        <div class="most-article__subtittle"><?= $row['subtitle'] ?></div>
     </div>
     <div class="most-article__information">
         <div class="most-article__author">
-            <img src="/static/images/<?= $posts_recent['photo_author'] ?>" alt="<?= $posts_recent['author'] ?>">
-            <div class="most-article__name"><?= $posts_recent['author'] ?></div>
+            <img src="<?= $row['author_url'] ?>" alt="<?= $row['author'] ?>">
+            <div class="most-article__name"><?= $row['author'] ?></div>
         </div>
-        <div class="most-article__date"><?= date("n/d/y", $posts_recent['date'] )?></div>
+        <div class="most-article__date"><?= $row['publish_date'] ?></div>
     </div>
-</div>
+</a>

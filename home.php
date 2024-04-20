@@ -1,83 +1,32 @@
 <?php
-$posts = [
-    [
-        'id' => 1,
-        'tittle' => 'The Road Ahead',
-        'subtittle' => 'The road ahead might be paved - it might not be.',
-        'photo_author' => 'http://localhost:8001/static/images/Mat_Vogels.svg',
-        'author' => 'Mat Vogels',
-        'date' => '1443139200',
-        // другие свойства этого поста
-    ],
-    [
-        'id' => 2,
-        'tittle' => 'From Top Down',
-        'subtittle' => 'Once a year, go someplace you’ve never been before.',
-        'photo_author' => 'http://localhost:8001/static/images/William_Wong.svg',
-        'author' => 'William Wong',
-        'date' => '1443139200',
-        // свойства второго поста
-    ],
-];
-$posts_recent = [
-    [
-        'image' => 'http://localhost:8001/static/images/image_article3.svg/',
-        'image_description' => 'balloon',
-        'tittle' => 'Still Standing Tall',
-        'subtittle' => 'Life begins at the end of your comfort zone.',
-        'photo_author' => 'http://localhost:8001/static/images/William_Wong.svg',
-        'author' => 'Mat Vogels',
-        'date' => '1443139200',
-    ],
-    [
-        'image' => 'http://localhost:8001/static/images/image_article4.svg',
-        'image_description' => 'bridge',
-        'tittle' => 'Sunny Side Up',
-        'subtittle' => 'No place is ever as bad as they tell you it’s going to be.',
-        'photo_author' => 'http://localhost:8001/static/images/Mat_Vogels.svg',
-        'author' => 'Mat Vogels',
-        'date' => '1443139200',
-    ],
-    [
-        'image' => 'http://localhost:8001/static/images/image_article5.svg',
-        'image_description' => 'dawn',
-        'tittle' => 'Water Falls',
-        'subtittle' => 'We travel not to escape life, but for life not to escape
-        us.',
-        'photo_author' => 'http://localhost:8001/static/images/Mat_Vogels.svg',
-        'author' => 'Mat Vogels',
-        'date' => '1443139200',
-    ],
-    [
-        'image' => 'http://localhost:8001/static/images/image_article6.svg',
-        'image_description' => 'Ocean',
-        'tittle' => 'Through the Mist',
-        'subtittle' => 'Travel makes you see what a tiny place you occupy in the
-        world.',
-        'photo_author' => 'http://localhost:8001/static/images/William_Wong.svg',
-        'author' => 'William Wong',
-        'date' => '1443139200',
-    ],
-    [
-        'image' => 'http://localhost:8001/static/images/image_article7.svg',
-        'image_description' => 'fog',
-        'tittle' => 'Awaken Early',
-        'subtittle' => 'Not all those who wander are lost.',
-        'photo_author' => 'http://localhost:8001/static/images/Mat_Vogels.svg',
-        'author' => 'Mat Vogels',
-        'date' => '1443139200',
-    ],
-    [
-        'image' => 'http://localhost:8001/static/images/image_article8.svg',
-        'image_description' => 'Waterfall',
-        'tittle' => 'Try it Always',
-        'subtittle' => 'The world is a book, and those who do not travel read only
-        one page.',
-        'photo_author' => 'http://localhost:8001/static/images/Mat_Vogels.svg',
-        'author' => 'Mat Vogels',
-        'date' => '1443139200',
-    ],
-]
+
+require_once "connection.php";
+
+function getFeaturedPostsFromDB(mysqli $conn): void
+{
+    $sql = "SELECT * FROM post WHERE featured=1";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            include 'post_preview.php';
+        }
+    } else {
+        echo "0 results";
+    }
+}
+
+function getMostRecentPostsFromDB(mysqli $conn): void
+{
+    $sql = "SELECT * FROM post WHERE featured=0";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            include 'posts_recent-preview.php';
+        }
+    } else {
+        echo "0 results";
+    }
+}
 ?>
 
 
@@ -92,6 +41,7 @@ $posts_recent = [
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./static/styles/style1.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: rgba(247, 247, 247, 1);
@@ -104,7 +54,7 @@ $posts_recent = [
         <div class="banner">
             <div class="header">
                 <div class="header__logo">
-                    <img src="/static/images/Escape_End.svg" alt="Логотип-Escape">
+                <a class="to-home" href='/home'><img src="http://localhost:8001/static/images/Escape_End.svg" alt="logo-Escape"></a>
                 </div>
                 <nav class="navigation">
                     <ul class="navigation__list">
@@ -161,9 +111,9 @@ $posts_recent = [
             <hr class="block-future__line">
             <div class="block-future__content-block1">
                 <?php
-                foreach ($posts as $post) {
-                    include 'post_preview.php';
-                }
+                $conn = createDBConnection();
+                getFeaturedPostsFromDB($conn);
+                closeDBConnection($conn);
                 ?>
             </div>
         </div>
@@ -172,25 +122,45 @@ $posts_recent = [
             <hr class="block-most__line">
             <div class="block-most__content-block2">
                 <?php
-                foreach ($posts_recent as $posts_recent) {
-                    include 'posts_recent-preview.php';
-                }
+                $conn = createDBConnection();
+                getMostRecentPostsFromDB($conn);
+                closeDBConnection($conn);
                 ?>
             </div>
         </div>
     </main>
     <footer class="footer">
+        <div class="footer-form">
+            <h5 class="footer-form__title">Stay in Touch</h5>
+            <hr class="footer-form__line">
+            <div class="footer-form__input">
+                <form action="#" method="GET"></form>
+                <input type="email" name="email" placeholder="Enter your email address" required>
+                <button class="input__button" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
         <div class="footerColor">
             <div class="ContainerEnd">
                 <div class="footer__inner">
                     <div class="footer__logo">
-                        <img src="/static/images/Escape_End.svg" alt="logo-Escape">
+                    <a class="to-home" href='/home'><img src="http://localhost:8001/static/images/Escape_End.svg" alt="logo-Escape"></a>
                     </div>
-                    <nav class="nav">
-                        <a class="navEnd" href="index.html">Home</a>
-                        <a class="navEnd" href="#">Categories</a>
-                        <a class="navEnd" href="#">About</a>
-                        <a class="navEnd" href="#">Contact</a>
+                    <nav class="navigation">
+                        <ul class="navigation__list">
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="/home">Home</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Categories</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">About</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#">Contact</a>
+                            </li>
+                        </ul>
                     </nav>
                 </div>
             </div>
