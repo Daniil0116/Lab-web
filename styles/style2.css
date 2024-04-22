@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.background-color{
+    background-color: rgba(66, 70, 73, 0.4);
+    position: absolute;
+    width: 1440px;
+    height: 800px;
+}
+.block_logo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 333px;
+    margin-left: 230px;
+    max-width: 380px;
+    max-height: 87px;
+}
+
+.logo_title {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.title__author {
+    font-family: Oxygen;
+    font-size: 24.5px;
+    font-weight: 400;
+    line-height: 30.94px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.logo_subtitle {
+    font-family: Oxygen;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.block_LogIn {
+    display: flex;
+    background-color: rgba(255, 255, 255, 1);
+    max-width: 480px;
+    max-height: 560px;
+    border-radius: 3px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: absolute;
+    top: 120px;
+    left: 830px;
+}
+
+.LogIn__input {
+    max-width: 400px;
+    max-height: 250px;
+    margin-bottom: 125px;
+}
+
+.LogIn__title {
+    font-family: Lora;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 40px;
+    margin-top: 56px;
+    margin-bottom: 50px;
+}
+
+.input__email {
+    font-family: Oxygen;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgba(122, 122, 122, 1);
+    margin-bottom: 5px;
+}
+
+.input__password {
+    font-family: Oxygen;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: rgba(122, 122, 122, 1);
+    margin-bottom: 5px;
+}
+
+input {
+    width: 400px;
+    height: 40px;
+    border: 0px 0px 1px 0px;
+    border: none;
+    border-bottom: 1px solid rgba(234, 234, 234, 1);
+    margin-bottom: 30px;
+}
+
+.input__button {
+    max-width: 93px;
+    max-height: 48px;
+    padding: 12px 24px 12px 24px;
+    gap: 10px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgba(221, 120, 63, 1);
+    font-family: Oxygen;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+}

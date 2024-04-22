@@ -45,7 +45,7 @@ function addPost(array $dataAsArray, $conn): void {
   $sql = <<<SQL
            INSERT INTO post
            (title, subtitle, content, author, author_url, publish_date, image_url, featured);
-           VALUES ('$title', '$subtitle', '$content', '$author', '$author_url', '$publish_date', '$image_irl', '$featured');
+           VALUES ('$title', '$subtitle', '$content', '$author', '$author_url', '$publish_date', '$image_url', '$featured');
   SQL;
   $conn->query($sql);
 }
