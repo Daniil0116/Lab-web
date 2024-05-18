@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape.author</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: rgba(247, 247, 247, 1);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__block">
+            <div class="block__logo">
+                <img src="images/Escape_Admin_author.png" alt="logo-Escape">
+                <div class="logo__author">author</div>
+            </div>
+            <div class="block__user">
+                <div class="user__photo"><img src="images/Avatar.png" alt="Avatar"></div>
+                <button class="user__exit"><img src="images/exit_button.png" alt="exit"></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="block_publich">
+            <div class="block_publich__block_title">
+                <h1 class="block_title__title">New Post</h1>
+                <div class="block_title__subtitle">Fill out the form bellow and publish your article</div>
+            </div>
+            <button class="block_publich__button">Publish</button>
+        </div>
+        <div class="block_main">
+            <h2 class="block_main__title">Main Information</h2>
+            <div class="block_main__block_loading">
+                <div class="block_new-post__info">
+                    <form action="#" method="GET">
+                        <div class="info__title">Title</div>
+                        <input class="input_text" type="text" name="title" placeholder="New Post" required>
+                        <div class="info__title">Short description</div>
+                        <input class="input_text" type="text" name="Short description"
+                            placeholder="Please, enter any description" required>
+                        <div class="info__title">Author name</div>
+                        <input class="input_text" type="text" name="Author name" required>
+                        <div class="info__title">Author Photo</div>
+                        <label class="input_author-photo">
+                            <input type="file" name="Author Photo" placeholder="Upload" required>
+                            <img class="author_photo" src="images/input_camera.svg">
+                        </label>
+                        <div class="info__title">Publish Date</div>
+                        <input class="input_data" type="date" name="Publish Date" placeholder="" required>
+                        <div class="info__title">Hero Image</div>
+                        <label class="input_hero-image1">
+                            <input type="file" name="Hero Image" placeholder="Upload" required>
+                            <img class="hero_photo" src="images/input_camera.svg">
+                        </label>
+                        <div class="info__subtitle">Size up to 10mb. Format: png, jpeg, gif.</div>
+                        <div class="info__title">Hero Image</div>
+                        <label class="input_hero-image2">
+                            <input type="file" name="Hero Image" placeholder="Upload" required>
+                            <img class="hero_photo" src="images/input_camera.svg">
+                        </label>
+                        <div class="info__subtitle">Size up to 5mb. Format: png, jpeg, gif.</div>
+                    </form>
+                </div>
+                <div class="block_loading__block_preview">
+                    <div class="block_preview__title">Article preview</div>
+                    <div class="block_preview__external_border">
+                        <div class="external_border__internal_border">
+                            <div class="internal_border__block_ellipse">
+                                <div class="block_ellipse__ellipse"></div>
+                                <div class="block_ellipse__ellipse"></div>
+                                <div class="block_ellipse__ellipse"></div>
+                            </div>
+                            <div class="internal_border__preview">
+                                <div class="preview__main-info">
+                                    <div class="preview__title">New Post</div>
+                                    <div class="preview__subtitle">Please, enter any description</div>
+                                </div>
+                                <div class="preview__image"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block_preview__title">Post card preview</div>
+                    <div class="block_card-preview">
+                        <div class="card-preview__border">
+                            <div class="card-preview__img"></div>
+                            <div class="card-preview__main-info">
+                                <div class="main-info_title">New Post</div>
+                                <div class="main-info_subtitle">Please, enter any description</div>
+                            </div>
+                            <div class="block_author-data">
+                                <div class="block_author-data__author">
+                                    <div class="author__img"></div>
+                                    <div class="author__name">Enter author name</div>
+                                </div>
+                                <div class="block_author-data__data">4/19/2023</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block-content">
+            <h3 class="block-content__title">Content</h3>
+            <form action="#" method="GET">
+                <div class="info__title">Post content (plain text)</div>
+                <textarea class="input_content" name="content" placeholder="Type anything you want ..." required></textarea>
+            </form>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
