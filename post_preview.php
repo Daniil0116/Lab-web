@@ -4,7 +4,7 @@
         <div class="future-article__subtittle"><?= $row['subtitle'] ?></div>
         <div class="future-article__information">
             <div class="future-article__author">
-                <img src="<?= $row['author_url'] ?>" alt="<?= $row['author'] ?>">
+                <img src="http://localhost:8001/static/<?= $row['author_url'] ?>" alt="<?= $row['author'] ?>">
                 <div class="future-article__name"><?= $row['author'] ?></div>
             </div>
             <div class="future-article__date"><?= $row['publish_date']?></div>
