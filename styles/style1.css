@@ -467,8 +467,13 @@ input {
 }
 
 .footerColor {
+display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
   max-width: 1440px;
   max-height: 89px;
+  margin: auto;
   background-color: rgba(35, 47, 56, 0.6);
   padding-right: 240px;
 }
@@ -477,6 +482,7 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   padding: 28px 0;
 }
 

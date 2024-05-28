@@ -526,7 +526,7 @@ input[type=data]::placeholder {
 .internal_border__preview {
     display: flex;
     max-width: 408px;
-    max-height: 236px;
+    max-height: 245px;
     gap: 36px;
     flex-direction: column;
     flex-wrap: wrap;
@@ -538,6 +538,7 @@ input[type=data]::placeholder {
     font-size: 20.4px;
     font-weight: 400;
     line-height: 24px;
+    margin-bottom: 5px;
 }
 
 .preview__Short_description {
