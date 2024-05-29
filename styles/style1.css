@@ -22,7 +22,6 @@
 .navigation__list {
   display: flex;
   list-style-type: none;
-  flex-wrap: wrap;
 }
 
 .navigation__link {
@@ -401,12 +400,7 @@
 }
 
 .footer {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
+  padding-top: 62px ;
   max-width: 1440px;
   max-height: 378px;
   margin: auto;
@@ -474,10 +468,6 @@ input {
 }
 
 .footerColor {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
   max-width: 1440px;
   max-height: 89px;
   margin: auto;
@@ -490,6 +480,5 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   padding: 28px 0;
 }

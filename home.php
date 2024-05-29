@@ -54,7 +54,7 @@ function getMostRecentPostsFromDB(mysqli $conn): void
         <div class="banner">
             <div class="header">
                 <div class="header__logo">
-                <a class="to-home" href='/home'><img src="http://localhost:8001/static/images/Escape_End.svg" alt="logo-Escape"></a>
+                    <a class="to-home" href='/home'><img src="http://localhost:8001/static/images/Escape_End.svg" alt="logo-Escape"></a>
                 </div>
                 <nav class="navigation">
                     <ul class="navigation__list">
@@ -144,7 +144,7 @@ function getMostRecentPostsFromDB(mysqli $conn): void
             <div class="ContainerEnd">
                 <div class="footer__inner">
                     <div class="footer__logo">
-                    <a class="to-home" href='/home'><img src="http://localhost:8001/static/images/Escape_End.svg" alt="logo-Escape"></a>
+                        <a class="to-home" href='/home'><img src="http://localhost:8001/static/images/Escape_End.svg" alt="logo-Escape"></a>
                     </div>
                     <nav class="navigation">
                         <ul class="navigation__list">
