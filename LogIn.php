@@ -1,49 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escape.author</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/style2.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-image: url(images/Author.backgroung.jpg);
-            background-repeat: no-repeat;
-            background-size: 1440px 800px;
+const HOST = 'localhost';
+const USERNAME = 'DaniilAdmin';
+const PASSWORD = 'Dan13586';
+const DATABASE = 'blog';
+
+function createDBConnection(): mysqli
+{
+    $conn = new mysqli(HOST, USERNAME, PASSWORD, DATABASE);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    return $conn;
+}
+
+function closeDBConnection(mysqli $conn): void
+{
+    $conn->close();
+}
+
+function findUserInDB(mysqli $conn): void
+{
+    $dataAsArray = []; // Инициализация переменной
+
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        $dataAsJson = file_get_contents("php://input");
+        $dataAsArray = json_decode($dataAsJson, true);
+
+        // Отладочная информация
+        error_log("Received data: " . print_r($dataAsArray, true));
+    }
+
+    if (!empty($dataAsArray) && isset($dataAsArray['password']) && isset($dataAsArray['login'])) {
+        $salt = 'MyPass';
+        $pass = md5((string)$dataAsArray['password']);
+        $email = $dataAsArray['login'];
+        $query = "SELECT user_id FROM user WHERE email = ? AND password = ?";
+        $statement = $conn->prepare($query);
+        $statement->bind_param("ss", $email, $pass);
+        $statement->execute();
+        $result = $statement->get_result();
+
+        if ($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            $userId = $row['user_id'];
+            session_name('auth');
+            session_start();
+            $_SESSION['user_id'] = $userId;
+            header('HTTP/1.1 200 OK');
+        } else {
+            header('HTTP/1.1 401 Unauthorized');
+            echo $dataAsArray;
         }
-    </style>
-</head>
+    } else {
+        header('HTTP/1.1 400 Bad Request'); // Возвращаем ошибку 400, если данные не были переданы
+    }
 
-<body>
-    <header>
-    </header>
-    <main class="background-color">
-        <div class="block_logo">
-            <div class="logo_title">
-                <img src="images/Escape_Admin.png" alt="logo-Escape">
-                <div class="title__author">author</div>
-            </div>
-            <div class="logo_subtitle">Log in to start creating</div>
-        </div>
-        <div class="block_LogIn">
-            <h1 class="LogIn__title">Log In</h1>
-            <div class="LogIn__input">
-                <form action="#" method="GET"></form>
-                <div class="input__email">Email</div>
-                <input type="email" name="email" required>
-                <div class="input__password">Password</div>
-                <input type="password" name="password" required>
-                <button class="input__button" type="submit">Log In</button>
-                </form>
-            </div>
-        </div>
-    </main>
-</body>
+    closeDBConnection($conn);
+}
 
-</html>
+$conn = createDBConnection();
+findUserInDB($conn);

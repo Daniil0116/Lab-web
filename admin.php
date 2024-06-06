@@ -1,3 +1,48 @@
+<?php
+const HOST = 'localhost';
+const USERNAME = 'DaniilAdmin';
+const PASSWORD = 'Dan13586';
+const DATABASE = 'blog';
+
+function authBySession()
+{
+    session_name('auth');
+    session_start();
+    if (!(array_key_exists('user_id', $_SESSION))) {
+        header('HTTP/1.1 401 Unauthorized');
+        die();
+    }
+}
+authBySession();
+
+function createDBConnection(): mysqli
+{
+    $conn = new mysqli(HOST, USERNAME, PASSWORD, DATABASE);
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    return $conn;
+}
+
+function closeDBConnection(mysqli $conn): void
+{
+    $conn->close();
+}
+
+function getUserEmailById(mysqli $conn, int $id): string
+{
+    $query = "SELECT email FROM user WHERE user_id = '$id'";
+    $result = $conn->query($query);
+    $result->num_rows;
+    $row = $result->fetch_assoc();
+    $email = $row['email'];
+    return $email;
+}
+$conn = createDBConnection();
+$email = getUserEmailById($conn, $_SESSION['user_id']);
+closeDBConnection($conn);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +73,7 @@
             </div>
             <div class="block__user">
                 <div class="user__photo"><img src="images/Avatar.png" alt="Avatar"></div>
-                <button class="user__exit"><img src="images/exit_button.png" alt="exit"></button>
+                <button type="submit" id="exit-button" class="user__exit"><img src="images/exit_button.png" alt="exit"></button>
             </div>
         </div>
     </header>

@@ -404,7 +404,15 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	}
 
-
+	document.getElementById('exit-button').addEventListener('click', function(event){
+        event.preventDefault()
+        fetch('http://localhost:8001/logout.php')
+        .then(response => {
+            if(response.ok){
+                window.location.href = 'http://localhost:8001/home'
+            }
+        })
+    })
 
 });
 

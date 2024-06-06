@@ -1,5 +1,17 @@
 <?php
 
+function authBySession()
+{
+    session_name('auth');
+    session_start();
+    if (is_null($_SESSION['auth'])) {
+        header('HTTP/1.1 401 Unauthorized');
+        die();
+    }
+}
+
+authBySession();
+
 require_once "connection.php";
 
 $method = $_SERVER['REQUEST_METHOD'];
