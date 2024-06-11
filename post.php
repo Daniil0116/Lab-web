@@ -30,81 +30,72 @@ closeDBConnection($conn);
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $post['title'] ?></title>
+    <link rel="stylesheet" href="./static/styles/style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./static/styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
+
 <body>
-    <header class="header">
-        <div class="header__logo">
-            <a class="to-home" href='/home'><img src="http://localhost:8001/static/images/Escape_Head.svg" alt="logo-Escape"></a>
-        </div>
-        <nav class="navigation">
-            <ul class="navigation__list">
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#">Home</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#">Categories</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#">About</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#">Contact</a>
-                </li>
-            </ul>
+    <header class="wrapper">
+        <nav class="inside_box">
+            <div class="logo">
+                <a class="to-home" href='/home'><img src="http://localhost:8001/static/images/Escape_Head.svg" alt="logo-Escape"></a>
+            </div>
+            <div class="navigation">
+                <button class="burger"><input type="checkbox" id="burger-checkbox" class="burger-checkbox"></button>
+                <ul class="spisok">
+                    <li class="nav_element"><a href='/home' class="no_lines">HOME</a></li>
+                    <li class="nav_element"><a href="#!" class="no_lines">CATEGORIES</a></li>
+                    <li class="nav_element"><a href="#!" class="no_lines">ABOUT</a></li>
+                    <li class="nav_element"><a href="#!" class="no_lines">CONTACT</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <main>
-        <div class="BlockIntro">
-            <h1 class="IntroLora"><?= $post['title'] ?></h1>
-            <h2 class="subtittle"><?= $post['subtitle'] ?></h2>
+    <main class="main">
+        <div class="title_all">
+            <h1 class="headline"><?= $post['title'] ?></h1>
+            <h2 class="annotation"><?= $post['subtitle'] ?></h2>
         </div>
-        <img class="image" src="<?= $post['image_url'] ?>" alt="<?= $post['title'] ?>">
-        <p class="text"><?= $post['content'] ?></p>
+        <img class="lights_png" src="<?= $post['image_url'] ?>" alt="<?= $post['title'] ?>">
+        <div class="text_frame">
+            <p class="main_text"><?= $post['content'] ?></p>
+        </div>
     </main>
-    <footer class="footer">
-        <div class="footer-form">
-            <h5 class="footer-form__title">Stay in Touch</h5>
-            <hr class="footer-form__line">
-            <div class="footer-form__input">
-                <form action="#" method="GET"></form>
-                <input type="email" name="email" placeholder="Enter your email address" required>
-                <button class="input__button" type="submit">Submit</button>
-                </form>
+    <footer class="footer_block">
+        <div class="pre-footer">
+            <div class="pre-footer__block">
+                <h3 class="pre-footer__cite">Stay in Touch</h3>
+                <div class="pre-footer__line"></div>
+            </div>
+            <div class="pre-footer__input">
+                <input class="enter-email" placeholder="Enter your email address">
+                <div class="submit"><a class="pre-footer__button">Submit</a></div>
             </div>
         </div>
-        <div class="footerColor">
-            <div class="ContainerEnd">
-                <div class="footer__inner">
-                    <div class="footer__logo">
-                        <a class="to-home" href='/home'><img src="http://localhost:8001/static/images/Escape_End.svg" alt="logo-Escape"></a>
+        <div class="footer_background">
+            <div class="footer_list">
+                <nav class="footer_nav">
+                    <div class="footer_logo">
+                        <a href='/home'><img src="http://localhost:8001/static/images/Escape_End.svg" alt="Escape"></a>
                     </div>
-                    <nav class="navigation">
-                        <ul class="navigation__list">
-                            <li class="navigation__item">
-                                <a class="navigation__link" href="/home">Home</a>
-                            </li>
-                            <li class="navigation__item">
-                                <a class="navigation__link" href="#">Categories</a>
-                            </li>
-                            <li class="navigation__item">
-                                <a class="navigation__link" href="#">About</a>
-                            </li>
-                            <li class="navigation__item">
-                                <a class="navigation__link" href="#">Contact</a>
-                            </li>
+                    <div class="vorona">
+                        <ul>
+                            <li class="down_item"><a href='/home' class="white_lines">HOME</a></li>
+                            <li class="down_item"><a href="#!" class="white_lines">CATEGORIES</a></li>
+                            <li class="down_item"><a href="#!" class="white_lines">ABOUT</a></li>
+                            <li class="down_item"><a href="#!" class="white_lines">CONTACT</a></li>
                         </ul>
-                    </nav>
-                </div>
+                    </div>
+                </nav>
             </div>
         </div>
     </footer>
